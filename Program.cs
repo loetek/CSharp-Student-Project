@@ -129,6 +129,28 @@ namespace StudentProject
             Roshi.AddingExercises(Dictionaries, Morpheus);
 
 
+    List<Students> students = new List<Students>() {
+
+    };
+
+    List<Exercises> exercises = new List<Exercises>() {
+        OverlyExcited,
+        SolarSystem,
+        CarLot,
+        DynamicCards
+    };
+
+
+
+
+
+
+    List<StudentProject> StudentsIn27 =
+    StudentList.Where(stu => stu.Cohort.Name == "Cohort 27");
+    StudentsIn27.ForEach(StudentProject => ConsoleWriteline());
+   
+
+
 
 
 
